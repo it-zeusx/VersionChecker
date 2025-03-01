@@ -1,18 +1,2 @@
-- Created an export to update Help Notification text.
-- Created param `Config.UI.UseCinematicMode_Keybind` to prevent cinematic mode to be accessible from the keybind.
-- Created functionality for targetting the specific player while sending the message using `Chat.CreateMessage`.
-- Created function and export that sends the message just for the client source.
-- Created image support for Default Notifications.
-
-- Added param to disable MugShotBase64 export.
-- Added functionality to disable external hud for other screens using baseevent `ZSX_UIV2:Storage:OnScreenSwitched`.
-- Added clear of chat input on close. 
-- Added baseevents for interfaces. `ZSX_UIV2:Interfaces:[INTERFACE]`.
-- Added export to update TextUI text and key.
-- Added visible labels for Pause Menu navbars.
-
-- Fixed translation for "Recommended". 
-- Fixed issue with `header` param in `Chat.CreateMessage` function.
-- Fixed object layout for `Config.PauseMenu.UserData`.
-- Fixed issue with chat input by adding some delay.
-- Reworked `Chat.CreateMessage` function for proper deployment.
+- Fixed issue with the default notification removal.
+- Fulfilled the exports and events from the previous patch.
