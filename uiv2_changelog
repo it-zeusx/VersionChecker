@@ -1,2 +1,7 @@
-- Fixed issue with the default notification removal.
-- Fulfilled the exports and events from the previous patch.
+- Created export to create 3D ME & DO via `Create3DDUI` export.
+- Added possibility to change currency.
+- Added preventer `Workers.Chat.PreventInput` in order to disable chat input.
+- Added possibility to remove 3D component entirely.
+- Fixed issue when removing the music from the misc options you couldn't resize the chat.
+- Fixed issue with manifest version. Now it should apply how it supposed to.
+- Applied static color for the centerized text for Notifications.
