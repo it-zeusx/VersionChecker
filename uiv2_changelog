@@ -1,7 +1,15 @@
 - Created export to create 3D ME & DO via `Create3DDUI` export.
-- Added possibility to change currency.
-- Added preventer `Workers.Chat.PreventInput` in order to disable chat input.
-- Added possibility to remove 3D component entirely.
-- Fixed issue when removing the music from the misc options you couldn't resize the chat.
-- Fixed issue with manifest version. Now it should apply how it supposed to.
-- Applied static color for the centerized text for Notifications.
+- Created Salty Chat compatibility.
+- Fixed issue with progressbar that could be bugged while entering other screens.
+- Fixed issue with the addon param for displayers to be properly gathered in NUI side.
+- Fixed currency input with regex.
+- Added compatibility for more accounts in pause menu.
+- Added baseevent `ZSX_UI:Storage:OnPositionUpdate` to get the position of elements on screen. That way you can easily access the values and dynamically change them in your other NUIs if for example you want to stick some kind of milleage and other stuff to the carhud.
+- Added configurable interval for Pause Menu thread.
+- Added feature to clear chat via command /clearchat.
+- Added param `Config.CommandGroupAllowed` that determines the group that can use permission related commands (such as /clearchat).
+- Added param `Config.DisableMinimapHandler` which disables minimap handler totally.
+- Added param `Config.DisableMinimapAnimation` which disables minimap animation.
+- Added character check for streetlabel to prevent text from overlapping
+- Added variable `name` for command names to update them accordingly.
+- Added variable `use` for each of `Config.Keybinds` elements in order to disable ones you don't use.
