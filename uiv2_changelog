@@ -1,15 +1,22 @@
-- Created export to create 3D ME & DO via `Create3DDUI` export.
-- Created Salty Chat compatibility.
-- Fixed issue with progressbar that could be bugged while entering other screens.
-- Fixed issue with the addon param for displayers to be properly gathered in NUI side.
-- Fixed currency input with regex.
-- Added compatibility for more accounts in pause menu.
-- Added baseevent `ZSX_UI:Storage:OnPositionUpdate` to get the position of elements on screen. That way you can easily access the values and dynamically change them in your other NUIs if for example you want to stick some kind of milleage and other stuff to the carhud.
-- Added configurable interval for Pause Menu thread.
-- Added feature to clear chat via command /clearchat.
-- Added param `Config.CommandGroupAllowed` that determines the group that can use permission related commands (such as /clearchat).
-- Added param `Config.DisableMinimapHandler` which disables minimap handler totally.
-- Added param `Config.DisableMinimapAnimation` which disables minimap animation.
-- Added character check for streetlabel to prevent text from overlapping
-- Added variable `name` for command names to update them accordingly.
-- Added variable `use` for each of `Config.Keybinds` elements in order to disable ones you don't use.
+- Fixed issue with the progressbar being restarted after the cancel event happened.
+- Fixed issue with minimap being hidden after going to settings screen > position.
+- Fixed issue with chat suggestion that appeared with upper case letters was not removed in suggestions box.
+- Fixed issue with the music not being started in some cases.
+- Fixed issue with chat commands on QBCore. (some admin commands are not working).
+- Fixed issue with minimap being hidden when accessing F9 > Position > Escape.
+- Fixed issue with point coords being accessed as entities.
+
+- Improved performance for hud status.
+- Improved performance for perspective thread.
+- Improved performance of seatbelt thread.
+- Slight improvement of vehicle thread including streetlabel calculations.
+
+- Created command `/get_config_preset <interface>` that generates easy-to-use config object for the specific preset.
+
+- Added param `Config.Chat.UseCommandsWithoutSyntax` that shows the commands without `/` syntax.
+- Added param `Config.Displayers.Visibile` param which represent visibility of the displayers elements (such as cash/bank etc.).
+- Added params `Config.PauseMenu.Order` and `Config.PauseMenu.UseCustomOrder` to order the pause menu navbar elements.
+- Added thread to disable hud while `Config.UI.UsePauseMenu` is set to false.
+- Added export to apply effects on hud elements to be active `ApplyEffect`.
+- Added param `Config.UseMusicInMulticharacter` that gives you access to use music handler directly from UIV2.
+- Added export `GetConfig` in order to get the config from UI.
