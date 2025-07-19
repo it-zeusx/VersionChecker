@@ -1,22 +1,15 @@
-- Fixed issue with the progressbar being restarted after the cancel event happened.
-- Fixed issue with minimap being hidden after going to settings screen > position.
-- Fixed issue with chat suggestion that appeared with upper case letters was not removed in suggestions box.
-- Fixed issue with the music not being started in some cases.
-- Fixed issue with chat commands on QBCore. (some admin commands are not working).
-- Fixed issue with minimap being hidden when accessing F9 > Position > Escape.
-- Fixed issue with point coords being accessed as entities.
+- Created seatbelt indicator (UI + SFX) for those who won't fasten seatbelt within 1 second after getting into vehicle.
+- Created faster way of finishing commands using `TAB` key. Now first command that's closest to the sentence is visible underneath the input.
+- Created non-3d weapon indicator that appears in the bottom right corner.
+- Created saved storage for the chat history, so it saves even after changing route.
 
-- Improved performance for hud status.
-- Improved performance for perspective thread.
-- Improved performance of seatbelt thread.
-- Slight improvement of vehicle thread including streetlabel calculations.
+- Added [phosphoricons](https://phosphoricons.com/) compatibility for icons list.
+- Added param `Config.UI.DisableVoiceIndicator` in order to disable voice indicator totally.
 
-- Created command `/get_config_preset <interface>` that generates easy-to-use config object for the specific preset.
+- Changed logic of chat `onInput` logic.
 
-- Added param `Config.Chat.UseCommandsWithoutSyntax` that shows the commands without `/` syntax.
-- Added param `Config.Displayers.Visibile` param which represent visibility of the displayers elements (such as cash/bank etc.).
-- Added params `Config.PauseMenu.Order` and `Config.PauseMenu.UseCustomOrder` to order the pause menu navbar elements.
-- Added thread to disable hud while `Config.UI.UsePauseMenu` is set to false.
-- Added export to apply effects on hud elements to be active `ApplyEffect`.
-- Added param `Config.UseMusicInMulticharacter` that gives you access to use music handler directly from UIV2.
-- Added export `GetConfig` in order to get the config from UI.
+- Fixed issue with Diamond type notifications.
+- Fixed issue with seatbelt dynamics.
+
+- Applied multiple statements in order to prevent errors from YouTube API. While errors persists it might also prevent people from using the API at all.
+- Applied sort for the chat suggestions.
