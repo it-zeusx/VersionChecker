@@ -1,15 +1,11 @@
-- Created seatbelt indicator (UI + SFX) for those who won't fasten seatbelt within 1 second after getting into vehicle.
-- Created faster way of finishing commands using `TAB` key. Now first command that's closest to the sentence is visible underneath the input.
-- Created non-3d weapon indicator that appears in the bottom right corner.
-- Created saved storage for the chat history, so it saves even after changing route.
 
-- Added [phosphoricons](https://phosphoricons.com/) compatibility for icons list.
-- Added param `Config.UI.DisableVoiceIndicator` in order to disable voice indicator totally.
+- Added key compatibility while using strings for example `~INPUT_VEH_SUB_ASCEND~` for both of help notifications & notifications. 
+- Applied reversed chat command history, now the last recorded command appears to be first and so on.
 
-- Changed logic of chat `onInput` logic.
+- Rewritten seatbelt logic, reverted back to thread one for now.
+- Rewritten YouTube API to use it natively, using YouTube IFrame API. Should resolve all issues and gives us more power over the load to properly await it until FiveM's resource iframe is properly created.
 
-- Fixed issue with Diamond type notifications.
-- Fixed issue with seatbelt dynamics.
-
-- Applied multiple statements in order to prevent errors from YouTube API. While errors persists it might also prevent people from using the API at all.
-- Applied sort for the chat suggestions.
+- Fixed issue with the Pause Menu not using phosphoricons.
+- Fixed issue with the Chat not using phosphoricons.
+- Fixed issue with YouTube player extract of URL, now it should play a video for a default config preset where it doesn't include `https://` string. [**EXPERIMENTAL**]
+- Fixed issue with YouTube player state being set as unstarted.
