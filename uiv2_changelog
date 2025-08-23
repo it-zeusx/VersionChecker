@@ -1,11 +1,12 @@
+- Created function to automatically centerized hud elements when position is not set.
 
-- Added key compatibility while using strings for example `~INPUT_VEH_SUB_ASCEND~` for both of help notifications & notifications. 
-- Applied reversed chat command history, now the last recorded command appears to be first and so on.
+- Added missing translation for "Weapon" in weapon indicator.
+- Added param `Config.BringPlayerAfterWelcomeScreenToInitialCoords` that can bring players to initial coordinates after welcome screen ends. Useful for people that doesn't use any multicharacters at all.
 
-- Rewritten seatbelt logic, reverted back to thread one for now.
-- Rewritten YouTube API to use it natively, using YouTube IFrame API. Should resolve all issues and gives us more power over the load to properly await it until FiveM's resource iframe is properly created.
+- Fixed issue with weapon indicator overlapping with carhud, now we gather offsets of carhud and move it on top of it. Still if carhud will be more to the left it can look a bit weird.
+- Fixed issue with progressbar intervals for disable controls, now the interval is lower.
+- Fixed issue with gathering presets using `/get_config_preset <interface>`.
+- Fixed issue with seatbelt indicator sound could play twice.
+- Fixed issue with NUI transition between Pause Menu -> UI Settings.
 
-- Fixed issue with the Pause Menu not using phosphoricons.
-- Fixed issue with the Chat not using phosphoricons.
-- Fixed issue with YouTube player extract of URL, now it should play a video for a default config preset where it doesn't include `https://` string. [**EXPERIMENTAL**]
-- Fixed issue with YouTube player state being set as unstarted.
+- Removal of additional outputs from NUI.
