@@ -1,12 +1,22 @@
-- Created function to automatically centerized hud elements when position is not set.
+- Created new logic for seatbelt system which is lightweight.
+- Created param `Config.PersistentStreetLabel` that works with `Config.PersistentMinimap` to show streetlabel all the time.
+- Created param `Config.UI.DisableVoiceIndicator` to disable voice indicator totally.
+- Created logic for gathering custom gears using `GetGear`.
+- Created export for music handler.
 
-- Added missing translation for "Weapon" in weapon indicator.
-- Added param `Config.BringPlayerAfterWelcomeScreenToInitialCoords` that can bring players to initial coordinates after welcome screen ends. Useful for people that doesn't use any multicharacters at all.
+- **Updated ox_lib progressbar compatibility to use latest logic.**
+-# Make sure to update it using Jerry's guide available [here](https://discord.com/channels/1001544387035148349/1380385519636316200/1380385519636316200)
 
-- Fixed issue with weapon indicator overlapping with carhud, now we gather offsets of carhud and move it on top of it. Still if carhud will be more to the left it can look a bit weird.
-- Fixed issue with progressbar intervals for disable controls, now the interval is lower.
-- Fixed issue with gathering presets using `/get_config_preset <interface>`.
-- Fixed issue with seatbelt indicator sound could play twice.
-- Fixed issue with NUI transition between Pause Menu -> UI Settings.
+- Added map toggle via `P` key.
+-# Make sure to change translation first in `client/commands/commands.lua` for `Open Map` translation.
+- Added more currencies and updated documentation.
+-# Currencies list is available [here](https://zsx-development.gitbook.io/docs/user-interface-v2/configurating/handling-ui/displayers/changing-currency)
 
-- Removal of additional outputs from NUI.
+- Fixed issue with errors from gathering weapon indicator component dimensions using`.getBoundingClientRect()`.
+- Fixed issue with pause menu view while using first person camera.
+- Fixed issue with help notification icon not updating.
+- Fixed issue with music not being played in ZSX Multicharacter.
+
+- Optimized streetlabel component by caching linear values.
+- Optimized seatbelt logic.
+- Optimized vehicle thread.
