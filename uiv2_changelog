@@ -1,22 +1,4 @@
-- Created new logic for seatbelt system which is lightweight.
-- Created param `Config.PersistentStreetLabel` that works with `Config.PersistentMinimap` to show streetlabel all the time.
-- Created param `Config.UI.DisableVoiceIndicator` to disable voice indicator totally.
-- Created logic for gathering custom gears using `GetGear`.
-- Created export for music handler.
+- Removed YouTube handler temporarily, until memory leak is solved.
 
-- **Updated ox_lib progressbar compatibility to use latest logic.**
--# Make sure to update it using Jerry's guide available [here](https://discord.com/channels/1001544387035148349/1380385519636316200/1380385519636316200)
-
-- Added map toggle via `P` key.
--# Make sure to change translation first in `client/commands/commands.lua` for `Open Map` translation.
-- Added more currencies and updated documentation.
--# Currencies list is available [here](https://zsx-development.gitbook.io/docs/user-interface-v2/configurating/handling-ui/displayers/changing-currency)
-
-- Fixed issue with errors from gathering weapon indicator component dimensions using`.getBoundingClientRect()`.
-- Fixed issue with pause menu view while using first person camera.
-- Fixed issue with help notification icon not updating.
-- Fixed issue with music not being played in ZSX Multicharacter.
-
-- Optimized streetlabel component by caching linear values.
-- Optimized seatbelt logic.
-- Optimized vehicle thread.
+- Fixed issue with seatbelt sound being inverted.
+- Fixed issue with cached entity.
