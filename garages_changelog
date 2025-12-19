@@ -2,7 +2,10 @@
 - Fixed issue with TextUI keybinding to park vehicle.
 - Fixed issue when player could access garage/impound through target while being inside of the vehicle.
 - Fixed issue with applying mods for color where resource expected it to be a number.
+- Fixed unaccessible color param for vehicle properties.
 
 - Added compatibilities for TextUI.
 - Added `Config.Navbars` object to disable/enable navbars (fuel, repair, etc.).
 - Added export `RefreshVehiclesList` that can be called through server side to refresh ZSX Garages vehicle object list. *(useful for vehicles that are inserted to the database but not exactly spawned on the player)*
+
+- Removed unused prints.
