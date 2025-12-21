@@ -1,11 +1,10 @@
-- Fixed issue with NUI being inaccessible with empty garage/impound table.
-- Fixed issue with TextUI keybinding to park vehicle.
-- Fixed issue when player could access garage/impound through target while being inside of the vehicle.
-- Fixed issue with applying mods for color where resource expected it to be a number.
-- Fixed unaccessible color param for vehicle properties.
+- Fixed issue with incorrect table name for `get_player_firstname_and_lastname`.
+- Fixed issue with exit data for Creator.
+- Fixed issue with fuel level not being applied properly.
+- Fixed issue with key system statement resulting in vehicle keys not being added after withdrawing vehicle.
+- Fixed issue with "You do not have access to store that vehicle." error.
+- Fixed issue with TextUI not being visible when retrieving vehicle from the garage.
+- Fixed issue with vehicles duplication while switching them using list.
+- Fixed issue with components overflow in DevTools.
 
-- Added compatibilities for TextUI.
-- Added `Config.Navbars` object to disable/enable navbars (fuel, repair, etc.).
-- Added export `RefreshVehiclesList` that can be called through server side to refresh ZSX Garages vehicle object list. *(useful for vehicles that are inserted to the database but not exactly spawned on the player)*
-
-- Removed unused prints.
+- Created more garages and impounds with default settings.
