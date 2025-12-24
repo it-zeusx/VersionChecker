@@ -1,10 +1,8 @@
-- Fixed issue with incorrect table name for `get_player_firstname_and_lastname`.
-- Fixed issue with exit data for Creator.
-- Fixed issue with fuel level not being applied properly.
-- Fixed issue with key system statement resulting in vehicle keys not being added after withdrawing vehicle.
-- Fixed issue with "You do not have access to store that vehicle." error.
-- Fixed issue with TextUI not being visible when retrieving vehicle from the garage.
-- Fixed issue with vehicles duplication while switching them using list.
-- Fixed issue with components overflow in DevTools.
+- Added baseevent for change of the garage state in `client/baseevents.lua`.
 
-- Created more garages and impounds with default settings.
+- Created zones for impounds
+- Created compatibility to access garages with E key (that's in beta state)
+- Created markers in zones.
+
+- Fixed issue with the target resource compatibility gatherer.
+- Fixed issue with hotwire state while using MrNewbVehicleKeys (thank you, MrNewb!)
