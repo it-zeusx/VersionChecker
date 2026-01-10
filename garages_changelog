@@ -1,8 +1,20 @@
-- Added baseevent for change of the garage state in `client/baseevents.lua`.
+- Created "Change Plate" input to change vehicle plate [still testing that]
+- Created export `RefreshVehiclesListForPlayer` to refresh vehicle data when needed.
 
-- Created zones for impounds
-- Created compatibility to access garages with E key (that's in beta state)
-- Created markers in zones.
+- Added param `Config.BringMinimap` to bring minimap after leaving garage/impound.
+- Added param `Config.DisplayAllVehicles` to display every vehicle parked in garage/impound (excluding display in shared garages).
+- Added param `Config.GatherVehiclesListOnEachExecute` to gather vehicles every time player access garage.
+- Added param `Config.Zones.Radius` to handle distance units for displaying TextUI and handling the payload.
 
-- Fixed issue with the target resource compatibility gatherer.
-- Fixed issue with hotwire state while using MrNewbVehicleKeys (thank you, MrNewb!)
+- Made params `Config.DisplayAllVehicles` and `Config.GatherVehiclesListOnEachExecute` as default.
+- Made zones more optimized & reduced calls.
+
+- Fixed issue with blips appearing for garages that player lack access to.
+- Fixed issue with list overflowing with the button in impound.
+- Fixed issue with states while leaving impound.
+- Fixed issue with disappearing marker.
+- Fixed issue with accessing garage after leaving impound.
+- Fixed issue with lack of the access to specific garages.
+- Fixed issue with gathering vehicle properties resulting in mismatch of the data.
+- Fixed issue when passenger could park his own car.
+- Fixed issue with export `RefreshVehicleList` not removing duplicates when plate got updated.
