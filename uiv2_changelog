@@ -1,4 +1,22 @@
-- Removed YouTube handler temporarily, until memory leak is solved.
+- Created a handle to register/unregister hud statuses dynamically. More information can be found at the [documentation](https://zsx-development.gitbook.io/docs/resources/user-interface-v2/exports/statuses).
 
-- Fixed issue with seatbelt sound being inverted.
-- Fixed issue with cached entity.
+- Added missing comments on config variables.
+- Added a handle for config variables to overwrite unused features.
+- Added `Config.UseOptimalValues` that disables expensive UIV2 features.
+- Added interval to check if cursor should appear on screen or not.
+
+- Fixed issue with progressbar props not being networked.
+- Fixed issue with pause menu missing cursor in some instances.
+- Fixed issue with map legend not appearing/being faded out in some instances. (testing)
+- Fixed issue with game audio not being changeable through settings. (testing)
+- Fixed issue with radar state change on switching screens.
+- Fixed issue with ox_lib progressbar snippet.
+- Fixed issue with Use 3D option being enabled even if `Config.UsePerspective` or `Config.UI.Use3DContent` was disabled.
+- Fixed interval issue with TextUI while destroying it.
+
+- Removed unused console logs and prints from release version.
+- Removed unused keybind for vertical alignment.
+- Removed `logout` navbar button.
+
+- Reworked the code for serving data transfer from server side to client.
+- Pushed `open_map` command and key mapping for it at the top of the `client/commands/commands.lua` file.
