@@ -1,20 +1,10 @@
-- Created "Change Plate" input to change vehicle plate [still testing that]
-- Created export `RefreshVehiclesListForPlayer` to refresh vehicle data when needed.
+- Created car spawner feature that allows to apply predefined vehicles to the garage.
+- Created impound form with job whitelist.
+- Applied prevention so players can no longer spam park key.
 
-- Added param `Config.BringMinimap` to bring minimap after leaving garage/impound.
-- Added param `Config.DisplayAllVehicles` to display every vehicle parked in garage/impound (excluding display in shared garages).
-- Added param `Config.GatherVehiclesListOnEachExecute` to gather vehicles every time player access garage.
-- Added param `Config.Zones.Radius` to handle distance units for displaying TextUI and handling the payload.
-
-- Made params `Config.DisplayAllVehicles` and `Config.GatherVehiclesListOnEachExecute` as default.
-- Made zones more optimized & reduced calls.
-
-- Fixed issue with blips appearing for garages that player lack access to.
-- Fixed issue with list overflowing with the button in impound.
-- Fixed issue with states while leaving impound.
-- Fixed issue with disappearing marker.
-- Fixed issue with accessing garage after leaving impound.
-- Fixed issue with lack of the access to specific garages.
-- Fixed issue with gathering vehicle properties resulting in mismatch of the data.
-- Fixed issue when passenger could park his own car.
-- Fixed issue with export `RefreshVehicleList` not removing duplicates when plate got updated.
+- Fixed issue with the naming in creator that prevented people from using `0` number.
+- Fixed issue with `x-fuel` compatibility.
+- Fixed issue with camera rotation while on bike.
+- Fixed issue with DevTools vehicles list being not scrollable.
+- Fixed issue with `Config.GatherVehiclesListOnExecute` variable while database queue system was set to active.
+- Fixed issue with the table layout on gathering player citizen id for QBCore/QBOX users.
