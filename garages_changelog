@@ -1,3 +1,4 @@
+[1.4]
 - Created car spawner feature that allows to apply predefined vehicles to the garage.
 - Created impound form with job whitelist.
 - Applied prevention so players can no longer spam park key.
@@ -8,3 +9,6 @@
 - Fixed issue with DevTools vehicles list being not scrollable.
 - Fixed issue with `Config.GatherVehiclesListOnExecute` variable while database queue system was set to active.
 - Fixed issue with the table layout on gathering player citizen id for QBCore/QBOX users.
+
+[1.4a]
+- Fixed issue with accessing garage, storing vehicle through TextUI
