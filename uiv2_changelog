@@ -1,22 +1,28 @@
-- Created a handle to register/unregister hud statuses dynamically. More information can be found at the [documentation](https://zsx-development.gitbook.io/docs/resources/user-interface-v2/exports/statuses).
+- Optimized performance for NUI end.
 
-- Added missing comments on config variables.
-- Added a handle for config variables to overwrite unused features.
-- Added `Config.UseOptimalValues` that disables expensive UIV2 features.
-- Added interval to check if cursor should appear on screen or not.
+- Reworked YT API Player in order to fix issue with memory leak.
+- Reworked NUI callbacks and some events to prevent UI lags due to the data traffic.
+- Reworked sound effect system.
+- Reworked documentation.
+- Reworked main menu screen (welcome screen).
+- Reworked base animations for all route changes.
 
-- Fixed issue with progressbar props not being networked.
-- Fixed issue with pause menu missing cursor in some instances.
-- Fixed issue with map legend not appearing/being faded out in some instances. (testing)
-- Fixed issue with game audio not being changeable through settings. (testing)
-- Fixed issue with radar state change on switching screens.
-- Fixed issue with ox_lib progressbar snippet.
-- Fixed issue with Use 3D option being enabled even if `Config.UsePerspective` or `Config.UI.Use3DContent` was disabled.
-- Fixed interval issue with TextUI while destroying it.
+- Created **"/ooc"** command as requested. Now it's a built-in command that send message to everyone on the server (global OOC).
+- Created functionality for status colors presets that you can set through `Config.UI.CustomHudColors` table (make sure to set `use = true,` to use them!).
+- Created export `Music_Reload` in case someone will need it.
+- Created export `IsInterfaceVisible` to gather whether interface is visible or not.
+- Created slider for sound effect volume.
 
-- Removed unused console logs and prints from release version.
-- Removed unused keybind for vertical alignment.
-- Removed `logout` navbar button.
+- Added comments and variables for each of the command for "anonymous" state. Now you can set whether message should send character name or just the id of the player.
+- Added `GetTime_Hours` & `GetTime_Minutes` to gather custom time in-game.
+- Added param `Config.UI.AllowUseCustomTime` to allow use of the functions `GetTime_Hours` & `GetTime_Minutes`.
+- Added param `Config.Chat.VisibilityTimeout` to handle how long chat should be visible.
+- Added `Workers.CinematicMode.PreventOpen` & `Workers.GameMenu.PreventOpen`.
+- Added event that listens for UI visibility state changes `ZSX_UIV2:Interface:VisibilityChanged`.
 
-- Reworked the code for serving data transfer from server side to client.
-- Pushed `open_map` command and key mapping for it at the top of the `client/commands/commands.lua` file.
+- Fixed issue with focus state that could cause temporary lack of the cursor.
+- Fixed issue with `Config.UI.DisableVoiceIndicator` param not disabling non 3d voice indicator.
+- Fixed cosmetic issue with chat message headers while using black color.
+- Fixed issue with `/get_config_preset` command returning lowercased interface names.
+- Fixed issue with seatbelt sound being heard when destroying entity.
+- Fixed issue with minimap radar state not being refreshed.
