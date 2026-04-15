@@ -1,3 +1,4 @@
+[3.0]
 - Optimized performance for NUI end.
 
 - Reworked YT API Player in order to fix issue with memory leak.
@@ -26,3 +27,8 @@
 - Fixed issue with `/get_config_preset` command returning lowercased interface names.
 - Fixed issue with seatbelt sound being heard when destroying entity.
 - Fixed issue with minimap radar state not being refreshed.
+
+[3.0a]
+- Fixed issue with minimap while not using `Config.UI.UsePauseMenu`.
+- Fixed issue with music not being able to be disabled through `Config.UI.UseMusic`.
+- Fixed issue with accessing map through P key.
