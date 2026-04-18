@@ -12,3 +12,10 @@
 
 [1.4a]
 - Fixed issue with accessing garage, storing vehicle through TextUI
+
+[1.4b]
+- Fixed issue with removal of vehicle for passenger view. Now it's removed and handled through server side.
+- Fixed issue with statebag not being applied for car spawner and other types of vehicles.
+- Fixed typo for allowed list.
+- Fixed issue with impounds removal through devtools.
+- Fixed issue with impound data not being properly send to the client.
