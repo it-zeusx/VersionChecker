@@ -1,21 +1,27 @@
-[1.4]
-- Created car spawner feature that allows to apply predefined vehicles to the garage.
-- Created impound form with job whitelist.
-- Applied prevention so players can no longer spam park key.
+[1.5]
+- Created **Faction Impound** logic that allows impounded vehicles by /impound command to be accessible only through Faction Impound until vehicle is not released to the player or timer ends. It's useful to for example search the vehicle after impounding it.
+- Created **new types of the garages such as boats and planes**.
+- Created new category for creator to create new garage types.
+- Created impound logic for new garage types.
+- Created command handler and introduced /dvdb command.
+- Created built-in basic help notification.
+- Created `/restore_impound` command that's needed to store vehicle again in Faction Impound after withdrawing it.
 
-- Fixed issue with the naming in creator that prevented people from using `0` number.
-- Fixed issue with `x-fuel` compatibility.
-- Fixed issue with camera rotation while on bike.
-- Fixed issue with DevTools vehicles list being not scrollable.
-- Fixed issue with `Config.GatherVehiclesListOnExecute` variable while database queue system was set to active.
-- Fixed issue with the table layout on gathering player citizen id for QBCore/QBOX users.
+- Fixed issue with vehicle removal when spawning new entity.
+- Fixed issue with `displayStatus` not being properly recognized.
+- Fixed issue with data traffic in DevTools component.
+- Fixed issue with navbar vehicle data props not being encoded before the update.
 
-[1.4a]
-- Fixed issue with accessing garage, storing vehicle through TextUI
+- Applied saving of the state in dev tools. Now no data will be lost when changing route.
+- Applied `ZSX_IsInFactionImpound` statebag to determine whether player is inside Faction Impound or not.
+- Applied garage notifications that determines action fallback.
+- Applied different logic for blips to predefine what blip purpose is, for example boat garage is called `Garage - Boat` (changeable via config).
+- Applied logic for entity types. Now you need to use `shared/config_vehicles.lua` `Config.Vehicles` table so resource can determine what entity type you're using.
+- Applied new view for garage types in DevTools.
 
-[1.4b]
-- Fixed issue with removal of vehicle for passenger view. Now it's removed and handled through server side.
-- Fixed issue with statebag not being applied for car spawner and other types of vehicles.
-- Fixed typo for allowed list.
-- Fixed issue with impounds removal through devtools.
-- Fixed issue with impound data not being properly send to the client.
+- Added Config.Blips.factionImpounds data for Faction Impounds blip.
+- Added translations for `faction_impound` prefix.
+
+- Changed logic for handling DevTools > Vehicles view. Right now you got access to manually select which garage vehicle should be transfered to, owner list to easily manipulate the data and more.
+- Changed logic of server sided callback to return more data with error handles.
+- Changed design of the list component. Vehicle data now will match overall design even better.
