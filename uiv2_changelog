@@ -32,3 +32,12 @@
 - Fixed issue with minimap while not using `Config.UI.UsePauseMenu`.
 - Fixed issue with music not being able to be disabled through `Config.UI.UseMusic`.
 - Fixed issue with accessing map through P key.
+
+[3.1]
+- Removed `"calling minimap update"` logs.
+- Fixed issue with minimap legend.
+- Applied 3D waypoints.
+
+- Added `Config.UseVehicleRadioStations` variable to handle whether radio stations should be enabled or not.
+- Added `Config.UI.Use3DWaypoints` variable to handle whether waypoints should be using 3D Points feature or not.
+- Added `Config.PauseMenu.MapFrontendTiming` table to handle in some extereme cases timings for minimap legend fix.
