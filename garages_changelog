@@ -25,3 +25,11 @@
 - Changed logic for handling DevTools > Vehicles view. Right now you got access to manually select which garage vehicle should be transfered to, owner list to easily manipulate the data and more.
 - Changed logic of server sided callback to return more data with error handles.
 - Changed design of the list component. Vehicle data now will match overall design even better.
+[1.5a]
+- Fixed issue with the car spawner feature not being able to park vehicles.
+- Fixed issue with accessing vehicle from the other player while player source is selecting it.
+
+- Optimized thread for drawing markers.
+
+- Added compatibility to impound npc vehicles.
+-# Note - it does not actually impound vehicle but removes it from the game world (if NPC owned).
