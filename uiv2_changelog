@@ -34,3 +34,8 @@
 - Created **Vehicle Indicators** that displays blinkers, emergency lights, engine & seatbelt status & more.
 - Created **Plane Hud** for better immersion.
 - Created **Background Blur** feature that allows you to make a **glass effect** on available components.
+
+[3.2a]
+- Fixed issue with TextUI `onComplete` events not being called due to the funcref.
+- Added background blur preset option to be enabled by default.
+- Added storage verification to prevent issues with wrong storage data.
