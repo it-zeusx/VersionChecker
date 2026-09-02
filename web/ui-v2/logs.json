@@ -178,6 +178,33 @@
           "caption": "Vehicle Indicators & Background Blur"
         }
       ]
+    },
+    {
+      "version": "3.1",
+      "date": "2026-06-30",
+      "title": "3D Waypoints & Bug fixes",
+      "changes": [
+        {
+          "type": "improved",
+          "text": "Added Config.UseVehicleRadioStations variable to handle whether radio stations should be enabled or not."
+        },
+        {
+          "type": "improved",
+          "text": "Added Config.UI.Use3DWaypoints variable to handle whether waypoints should be using 3D Points feature or not."
+        },
+        {
+          "type": "improved",
+          "text": "Added Config.PauseMenu.MapFrontendTiming table to handle in some extereme cases timings for minimap legend fix."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with minimap legend."
+        },
+        {
+          "type": "fixed",
+          "text": "Removed 'calling minimap update' logs."
+        }
+      ]
     }
   ]
 }
