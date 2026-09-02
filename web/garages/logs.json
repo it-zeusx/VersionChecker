@@ -123,6 +123,49 @@
           "text": "Fixed issue with navbar vehicle data props not being encoded before the update."
         }
       ]
+    },
+    {
+      "version": "1.4",
+      "date": "2026-03-07",
+      "title": "Car Spawner & Impound Form",
+      "changes": [
+        {
+          "type": "new",
+          "text": "Added compatibility to impound npc vehicles."
+        },
+        {
+          "type": "new",
+          "text": "Added compatibility to impound npc vehicles."
+        },
+        {
+          "type": "fixed",
+          "text": "Applied prevention so players can no longer spam park key."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with the naming in creator that prevented people from using 0 number."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with x-fuel compatibility."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with camera rotation while on bike."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with DevTools vehicles list being not scrollable."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with Config.GatherVehiclesListOnExecute variable while database queue system was set to active."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with the table layout on gathering player citizen id for QBCore/QBOX users."
+        }
+      ]
     }
   ]
 }
