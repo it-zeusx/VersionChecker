@@ -4,5 +4,125 @@
     "id": "garages",
     "name": "Garages"
   },
-  "releases": []
+  "releases": [
+    {
+      "version": "1.5a",
+      "date": "2026-06-30",
+      "title": "Faction Impounds, Boat & Aircraft Support - Hotfix #1",
+      "changes": [
+        {
+          "type": "improved",
+          "text": "Added compatibility to impound npc vehicles."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized thread for drawing markers."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with accessing vehicle from the other player while player source is selecting it."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with the car spawner feature not being able to park vehicles."
+        }
+      ]
+    },
+    {
+      "version": "1.5",
+      "date": "2026-06-22",
+      "title": "Faction Impounds, Boat & Aircraft Support",
+      "changes": [
+        {
+          "type": "new",
+          "text": "Created Faction Impound logic that allows impounded vehicles by /impound command to be accessible only through Faction Impound until vehicle is not released to the player or timer ends. It's useful to for example search the vehicle after impounding it."
+        },
+        {
+          "type": "new",
+          "text": "Created new types of the garages such as boats and planes."
+        },
+        {
+          "type": "new",
+          "text": "Created new category for creator to create new garage types."
+        },
+        {
+          "type": "new",
+          "text": "Created impound logic for new garage types."
+        },
+        {
+          "type": "new",
+          "text": "Created command handler and introduced /dvdb command."
+        },
+        {
+          "type": "new",
+          "text": "Created built-in basic help notification."
+        },
+        {
+          "type": "new",
+          "text": "Created /restore_impound command that's needed to store vehicle again in Faction Impound after withdrawing it."
+        },
+
+        {
+          "type": "improved",
+          "text": "Applied saving of the state in dev tools. Now no data will be lost when changing route."
+        },
+        {
+          "type": "improved",
+          "text": "Applied ZSX_IsInFactionImpound statebag to determine whether player is inside Faction Impound or not."
+        },
+        {
+          "type": "improved",
+          "text": "Applied garage notifications that determines action fallback."
+        },
+        {
+          "type": "improved",
+          "text": "Applied different logic for blips to predefine what blip purpose is, for example boat garage is called Garage - Boat (changeable via config)."
+        },
+        {
+          "type": "improved",
+          "text": "Applied logic for entity types. Now you need to use shared/config_vehicles.lua Config.Vehicles table so resource can determine what entity type you're using."
+        },
+        {
+          "type": "improved",
+          "text": "Applied new view for garage types in DevTools."
+        },
+        {
+          "type": "improved",
+          "text": "Added Config.Blips.factionImpounds data for Faction Impounds blip."
+        },
+        {
+          "type": "improved",
+          "text": "Added translations for faction_impound prefix."
+        },
+        {
+          "type": "improved",
+          "text": "Changed logic for handling DevTools > Vehicles view. Right now you got access to manually select which garage vehicle should be transfered to, owner list to easily manipulate the data and more."
+        },
+        {
+          "type": "improved",
+          "text": "Changed logic of server sided callback to return more data with error handles."
+        },
+        {
+          "type": "improved",
+          "text": "Changed design of the list component. Vehicle data now will match overall design even better."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with vehicle removal when spawning new entity."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with displayStatus not being properly recognized."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with data traffic in DevTools component."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with navbar vehicle data props not being encoded before the update."
+        }
+      ]
+    }
+  ]
 }
