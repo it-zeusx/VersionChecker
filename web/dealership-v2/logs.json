@@ -4,5 +4,33 @@
     "id": "dealership-v2",
     "name": "Dealership V2"
   },
-  "releases": []
+  "releases": [
+    {
+      "version": "1.1",
+      "date": "2026-09-02",
+      "title": "Insurance, Extended Financing Configuration",
+      "changes": [
+        {
+          "type": "improved",
+          "text": "Added Config.LeaseSettings.enabled to handle whether financing is enabled."
+        },
+        {
+          "type": "improved",
+          "text": "Added configurable lease key mapping."
+        },
+        {
+          "type": "improved",
+          "text": "Added insurance compatibility, only resource by now is m-Insurance."
+        },
+        {
+          "type": "improved",
+          "text": "Added insurance config with configurable pricing."
+        },
+        {
+          "type": "improved",
+          "text": "Small design adjustments."
+        }
+      ]
+    }
+  ]
 }
