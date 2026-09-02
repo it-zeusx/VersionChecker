@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "resource": {
+    "id": "ui-v2",
+    "name": "User Interface V2"
+  },
+  "releases": [
+    {
+      "version": "3.2a",
+      "date": "2026-08-14",
+      "title": "UI Overhaul - Hotfix #1",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fixed TextUI onComplete events not being called due to the funcref."
+        },
+        {
+          "type": "new",
+          "text": "Added background blur preset enabled by default."
+        },
+        {
+          "type": "fixed",
+          "text": "Added storage verification to prevent issues with invalid storage data."
+        }
+      ]
+    },
+    {
+      "version": "3.2",
+      "date": "2026-08-07",
+      "title": "UI Overhaul",
+      "changes": [
+        {
+          "type": "new",
+          "text": "Created Context Menu that utilizes ox_lib features."
+        },
+        {
+          "type": "new",
+          "text": "Created Vehicle Indicators that displays blinkers, emergency lights, engine & seatbelt status & more."
+        },
+        {
+          "type": "new",
+          "text": "Created Plane Hud for better immersion."
+        },
+        {
+          "type": "new",
+          "text": "Created Background Blur feature that allows you to make a glass effect on available components."
+        },
+        {
+          "type": "new",
+          "text": "Created Widescreen compatibility."
+        },
+        {
+          "type": "new",
+          "text": "Added Low Status Warnings that displays low indication values and sends default notification with a message."
+        },
+        {
+          "type": "new",
+          "text": "Added day & night cycle for vehicle components to easily navigate through visible data."
+        },
+        {
+          "type": "new",
+          "text": "Added Vertical Alignment option for hud."
+        },
+        {
+          "type": "new",
+          "text": "Added vehicle mileage support."
+        },
+        {
+          "type": "improved",
+          "text": "Applied SetEntityInvincible native instead SetPlayerInvincible due to customer request."
+        },
+        {
+          "type": "improved",
+          "text": "Applied asynchronous loading for routes."
+        },
+        {
+          "type": "improved",
+          "text": "Applied different logic for timers for both Notifications and Default Notifications."
+        },
+        {
+          "type": "improved",
+          "text": "Applied listeners for vehicle types. When vehicle is electric it will display bolt icon instead of gas pump."
+        },
+        {
+          "type": "improved",
+          "text": "Applied different TextUI logic to handle key controls. Now it listens for any input, removes it from the Text and parses it to the key param."
+        },
+        {
+          "type": "improved",
+          "text": "Applied different handle for 3D Perspective content."
+        },
+        {
+          "type": "improved",
+          "text": "Slightly redesigned Car Hud metric units and progresses so they're more visible at night."
+        },
+        {
+          "type": "improved",
+          "text": "Small adjustments to the size of the 3D Perspective."
+        },
+        {
+          "type": "improved",
+          "text": "Seatbelt & Engine health icons have been moved to the vehicle indicator component."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned Postion and Preview mode. Now you're able to configure interface position way better."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked Player DUI completely."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized both of seatbelts and car hud threads, which results in really low usage while inside vehicle."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized Points feature."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized Player DUI."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized 3D Perspective handle."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issues with NUI callbacks not returning any callback data."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed issue with Default Car Hud type containg wrong position offsets."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed issue with 3D Waypoints not being accessible while on foot."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed issue with seatbelt indicator sounds being played twice in some cases."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed issue with Square Hud type displaying zero values as full."
+        }
+      ],
+      "gallery": [
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/UIV2_Update_3.2_Context_Menu.png",
+          "alt": "UIV2 Context Menu",
+          "caption": "Context Menu"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/UIV2_Update_3.2_Position_Mode.png",
+          "alt": "Position Mode Redesign",
+          "caption": "Position Mode Redesign"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/UIV2_Update_3.2_Plane_Hud.png",
+          "alt": "Plane Hud",
+          "caption": "Plane Hud"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/UIV2_Update_3.2_Day_Night.png",
+          "alt": "Day n Night Cycle",
+          "caption": "Day & Night Cycle"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/UIV2_Update_3.2_Minimap_Content.png",
+          "alt": "Vehicle Indicators and Background Blur",
+          "caption": "Vehicle Indicators & Background Blur"
+        }
+      ]
+    }
+  ]
+}
