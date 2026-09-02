@@ -5,24 +5,28 @@
       "id": "dealership-v2",
       "name": "Dealership V2",
       "tebexPackageId": "7644621",
+      "tebexPackageSlug": "dealership-v2",
       "logs": "dealership-v2/logs.json"
     },
     {
       "id": "garages",
       "name": "Garages",
       "tebexPackageId": "7176048",
+      "tebexPackageSlug": "garages",
       "logs": "garages/logs.json"
     },
     {
       "id": "ui-v2",
       "name": "User Interface V2",
       "tebexPackageId": "6586198",
+      "tebexPackageSlug": "user-interface-v2",
       "logs": "ui-v2/logs.json"
     },
     {
       "id": "multicharacter",
       "name": "Multicharacter",
       "tebexPackageId": "6101755",
+      "tebexPackageSlug": "multicharacter",
       "logs": "multicharacter/logs.json"
     }
   ]
