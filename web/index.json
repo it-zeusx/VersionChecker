@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "resources": [
+    {
+      "id": "dealership-v2",
+      "name": "Dealership V2",
+      "tebexPackageId": "7644621",
+      "logs": "dealership-v2/logs.json"
+    },
+    {
+      "id": "garages",
+      "name": "Garages",
+      "tebexPackageId": "7176048",
+      "logs": "garages/logs.json"
+    },
+    {
+      "id": "ui-v2",
+      "name": "User Interface V2",
+      "tebexPackageId": "6586198",
+      "logs": "ui-v2/logs.json"
+    },
+    {
+      "id": "multicharacter",
+      "name": "Multicharacter",
+      "tebexPackageId": "6101755",
+      "logs": "multicharacter/logs.json"
+    }
+  ]
+}
