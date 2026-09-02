@@ -130,19 +130,19 @@
           "text": "Fixed issues with NUI callbacks not returning any callback data."
         },
         {
-          "type": "improved",
+          "type": "fixed",
           "text": "Fixed issue with Default Car Hud type containg wrong position offsets."
         },
         {
-          "type": "improved",
+          "type": "fixed",
           "text": "Fixed issue with 3D Waypoints not being accessible while on foot."
         },
         {
-          "type": "improved",
+          "type": "fixed",
           "text": "Fixed issue with seatbelt indicator sounds being played twice in some cases."
         },
         {
-          "type": "improved",
+          "type": "fixed",
           "text": "Fixed issue with Square Hud type displaying zero values as full."
         }
       ],
