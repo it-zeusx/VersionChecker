@@ -4,5 +4,130 @@
     "id": "multicharacter",
     "name": "Multicharacter"
   },
-  "releases": []
+  "releases": [
+    {
+      "version": "4.0",
+      "date": "2026-09-11",
+      "title": "Complete Rework",
+      "changes": [
+        {
+          "type": "new",
+          "text": "Completely redesigned Main Multicharacter view."
+        },
+        {
+          "type": "new",
+          "text": "Completely redesigned Settings content."
+        },
+        {
+          "type": "new",
+          "text": "Completely redesigned Identity content."
+        },
+        {
+          "type": "new",
+          "text": "Redesigned spawn selection view."
+        },
+        {
+          "type": "new",
+          "text": "Reworked entire camera handler with configurable easings, curved paths, depth of field & more."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked login and logout cinematics to maintain player focus."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked algorithms that position player in world."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked world collision algorithm. "
+        },
+        {
+          "type": "new",
+          "text": "Applied gameView transitions."
+        },
+        {
+          "type": "new",
+          "text": "Applied camera collision checks."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized initial loading flow."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized database queries."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized spawn selector thread."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized character swap."
+        },
+
+        {
+          "type": "improved",
+          "text": "Added per-character settings preferences such as camera position / animation, filters and pose."
+        },
+        {
+          "type": "improved",
+          "text": "Added last character preference, which loads your last used character initially."
+        },
+        {
+          "type": "improved",
+          "text": "Added configuration for camera position & player animation."
+        },
+        {
+          "type": "improved",
+          "text": "Added native Qbox support for main config files."
+        },
+        {
+          "type": "improved",
+          "text": "Added native Qbox support for starting apartment feature when `characters.startingApartment` is enabled."
+        },
+        {
+          "type": "improved",
+          "text": "Added `esx_multicharacter` as a provider (no need to set `Config.Multichar` anymore)."
+        },
+        {
+          "type": "improved",
+          "text": "Added slot caching and parallel loading for character data."
+        },
+        {
+          "type": "improved",
+          "text": "Added required housing/apartments compatibilities."
+        },
+        {
+          "type": "improved",
+          "text": "Added drag handle in spawn selector."
+        },
+        {
+          "type": "improved",
+          "text": "Added more spawn locations."
+        }
+      ],
+      "gallery": [
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/multicharacter_rework_main_screen.png",
+          "alt": "Main View Redesign",
+          "caption": "Multicharacter Redesign"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/multicharacter_rework_settings_pose.png",
+          "alt": "More settings",
+          "caption": "More Settings"
+        },
+        {
+          "type": "image",
+          "url": "https://r2.fivemanage.com/QHELq0yHeO2rOCR9RZxD0/multicharacter_rework_identity.png",
+          "alt": "Identity Redesign",
+          "caption": "Identity Redesign"
+        }
+      ]
+    }
+  ]
 }
