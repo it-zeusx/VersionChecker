@@ -6,6 +6,61 @@
   },
   "releases": [
     {
+      "version": "1.2",
+      "date": "2026-09-14",
+      "title": "Vehicle Persistence, VIP Coins and Improvements",
+      "changes": [
+        {
+          "type": "improved",
+          "text": "Fixed music playback inside FiveM."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed the purchase interface for exclusive vehicles."
+        },
+        {
+          "type": "improved",
+          "text": "Fixed surface marker placement in Position Editor."
+        },
+        {
+          "type": "improved",
+          "text": "Added HUD visibility handling during test drives."
+        },
+        {
+          "type": "improved",
+          "text": "Added a diamond icon for exclusive vehicles."
+        },
+        {
+          "type": "improved",
+          "text": "Added VIP coin integration validation. Invalid integrations are now disabled automatically."
+        },
+        {
+          "type": "improved",
+          "text": "Exclusive vehicles now use regular payments when VIP coins are unavailable."
+        },
+        {
+          "type": "improved",
+          "text": "Added vehicle persistence compatibility with Kiminaze's AdvancedParking."
+        },
+        {
+          "type": "improved",
+          "text": "Added support for custom vehicle persistence providers."
+        },
+        {
+          "type": "improved",
+          "text": "Repossessed vehicles are now removed from the configured vehicle persistence system."
+        },
+        {
+          "type": "improved",
+          "text": "Applied Position Editor to dealership positions in Developer Mode."
+        },
+        {
+          "type": "improved",
+          "text": "Enabled financing by default."
+        }
+      ]
+    },
+    {
       "version": "1.1",
       "date": "2026-09-02",
       "title": "Insurance, Extended Financing Configuration",
