@@ -6,6 +6,173 @@
   },
   "releases": [
     {
+      "version": "1.6",
+      "date": "2026-09-25",
+      "title": "Major UI Rework, Vehicle Management and Sell",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fixed an issue that made some zones inaccessible."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue that made markers invisible in some cases."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed Repair and Fuel actions not updating vehicle data correctly."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed a typo in the jg-textui integration."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an infinite vehicle model preload."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed incorrect TextUI descriptions for impound and faction impound locations."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed overlapping garage zones and switching between access and parking interactions."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed camera transitions when leaving impounds or withdrawing vehicles."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed withdrawing vehicles from faction impounds."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized DevTools updates. Editing a garage or impound now refreshes only the affected location."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized DevTools camera updates and vehicle lookups."
+        },
+        {
+          "type": "improved",
+          "text": "Optimized vehicle indicator updates to reduce unnecessary NUI messages."
+        },
+        {
+          "type": "improved",
+          "text": "Improved camera framing for taller vehicles."
+        },
+        {
+          "type": "new",
+          "text": "Added compatibility with Kiminaze's Vehicle Deformation."
+        },
+        {
+          "type": "new",
+          "text": "Added job grade restrictions for Car Spawner vehicles. You can now set the minimum job grade required for each vehicle."
+        },
+        {
+          "type": "new",
+          "text": "Added configurable Car Spawner withdrawal limits."
+        },
+        {
+          "type": "new",
+          "text": "Added Config.ServerLogo for the server logo displayed during transitions."
+        },
+        {
+          "type": "new",
+          "text": "Added Config.AllowDuplicateVehicleWithdrawal to control whether vehicles with duplicate plates can be withdrawn."
+        },
+        {
+          "type": "new",
+          "text": "Added different cinematic camera angles when entering garages."
+        },
+        {
+          "type": "new",
+          "text": "Added background blur to the parking dialog and redesigned interface panels."
+        },
+        {
+          "type": "new",
+          "text": "Added custom vehicle names that can be edited or removed directly from the vehicle list."
+        },
+        {
+          "type": "new",
+          "text": "Added consistent vehicle sorting based on category and vehicle name."
+        },
+        {
+          "type": "new",
+          "text": "Added keyboard navigation and control hints for browsing vehicles, switching categories and confirming actions."
+        },
+        {
+          "type": "new",
+          "text": "Added confirmation dialogs for vehicle actions and leaving the garage."
+        },
+        {
+          "type": "new",
+          "text": "Added confirmation when transferring a vehicle to a shared garage."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to recover impounded vehicles into the currently opened public garage."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to move personal vehicles from shared garages back into a public garage."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to withdraw personal vehicles while using shared garages or Car Spawner garages."
+        },
+        {
+          "type": "new",
+          "text": "Added engine health and fuel indicators to the vehicle preview."
+        },
+        {
+          "type": "new",
+          "text": "Added electric vehicle detection with a dedicated energy indicator icon."
+        },
+        {
+          "type": "new",
+          "text": "Added garage notifications with clearer feedback for loading states and vehicle actions."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to permanently impound a selected vehicle."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned the garage interface, including navigation, vehicle indicators and action buttons."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned the vehicle list with category filters, vehicle counters and brand logos."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned the parking form. Players can now keep a vehicle personal or share it with the garage."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned the impound form."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked Wall Effect to better adapt to vehicle dimensions, world geometry and uneven terrain."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked garage transition animations and added support for displaying the server logo."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked vehicle transfers with an interactive map and selectable garage locations inspired by the Multicharacter Spawn Selector."
+        },
+        {
+          "type": "new",
+          "text": "Added the Sell feature, which allows players to sell vehicles to other players directly through the garage."
+        }
+      ]
+    },
+    {
       "version": "1.5a",
       "date": "2026-06-30",
       "title": "Faction Impounds, Boat & Aircraft Support - Hotfix #1",
@@ -61,7 +228,6 @@
           "type": "new",
           "text": "Created /restore_impound command that's needed to store vehicle again in Faction Impound after withdrawing it."
         },
-
         {
           "type": "improved",
           "text": "Applied saving of the state in dev tools. Now no data will be lost when changing route."
