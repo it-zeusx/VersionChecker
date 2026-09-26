@@ -1,35 +1,47 @@
-[1.5]
-- Created **Faction Impound** logic that allows impounded vehicles by /impound command to be accessible only through Faction Impound until vehicle is not released to the player or timer ends. It's useful to for example search the vehicle after impounding it.
-- Created **new types of the garages such as boats and planes**.
-- Created new category for creator to create new garage types.
-- Created impound logic for new garage types.
-- Created command handler and introduced /dvdb command.
-- Created built-in basic help notification.
-- Created `/restore_impound` command that's needed to store vehicle again in Faction Impound after withdrawing it.
+[1.6]
+- Fixed issue with zones being not accessible.
+- Fixed issue with markers not being visible in some instances.
+- Fixed issues with Repair and Fuel actions not updating vehicle data correctly.
+- Fixed typo for "jg-textui".
+- Fixed issue with infinite model preload.
+- Fixed incorrect TextUI descriptions for impound and faction impound locations.
+- Fixed issues with overlapping garage zones and switching between access and parking interactions.
+- Fixed issues with camera transitions when leaving impounds or withdrawing vehicles.
+- Fixed issue with withdrawing vehicle from faction impound.
 
-- Fixed issue with vehicle removal when spawning new entity.
-- Fixed issue with `displayStatus` not being properly recognized.
-- Fixed issue with data traffic in DevTools component.
-- Fixed issue with navbar vehicle data props not being encoded before the update.
+- Optimized DevTools updates. Editing a garage or impound now refreshes only the affected location.
+- Optimized DevTools camera updates and vehicle lookups.
+- Optimized vehicle indicator updates to reduce unnecessary NUI messages.
 
-- Applied saving of the state in dev tools. Now no data will be lost when changing route.
-- Applied `ZSX_IsInFactionImpound` statebag to determine whether player is inside Faction Impound or not.
-- Applied garage notifications that determines action fallback.
-- Applied different logic for blips to predefine what blip purpose is, for example boat garage is called `Garage - Boat` (changeable via config).
-- Applied logic for entity types. Now you need to use `shared/config_vehicles.lua` `Config.Vehicles` table so resource can determine what entity type you're using.
-- Applied new view for garage types in DevTools.
+- Improved camera framing for taller vehicles.
 
-- Added Config.Blips.factionImpounds data for Faction Impounds blip.
-- Added translations for `faction_impound` prefix.
+- Added compatibility for Kiminaze's Vehicle Deformation.
+- Added job grade restrictions for car spawner feature. Now you're able to determine which minimal job grade player needs to access specific vehicle.
+- Added configurable car spawner withdraw limit.
+- Added `Config.ServerLogo` for the server logo preview on slider.
+- Added `Config.AllowDuplicateVehicleWithdrawal` to toggle whether duplicate of vehicles should be removed when retrieving vehicle or if retrieval should be blocked.
+- Added different cinematic camera angles when entering garages.
+- Added background blur to the parking dialog and redesigned interface panels.
+- Added custom vehicle names that can be edited or removed directly from the vehicle list.
+- Added consistent vehicle sorting based on category and vehicle name.
+- Added keyboard navigation and control hints for browsing vehicles, switching categories and confirming actions.
+- Added confirmation dialogs for vehicle actions and garage exit.
+- Added confirmation when transferring a vehicle to a shared garage.
+- Added an option to recover impounded vehicles into the currently opened public garage.
+- Added an option to move your vehicles from shared garages back into a public garage.
+- Added an option to withdraw personal vehicles while using shared garages or Car Spawner garages.
+- Added engine health and fuel indicators on vehicle preview.
+- Added electric vehicle detection with a dedicated icon for the fuel indicator.
+- Added garage notifications with clearer feedback for loading states and vehicle actions.
+- Added an option to impound form to permanently impound selected vehicle.
 
-- Changed logic for handling DevTools > Vehicles view. Right now you got access to manually select which garage vehicle should be transfered to, owner list to easily manipulate the data and more.
-- Changed logic of server sided callback to return more data with error handles.
-- Changed design of the list component. Vehicle data now will match overall design even better.
-[1.5a]
-- Fixed issue with the car spawner feature not being able to park vehicles.
-- Fixed issue with accessing vehicle from the other player while player source is selecting it.
+- Redesigned garage UI, including nav, vehicle indicators and action buttons.
+- Redesigned the vehicle list with category filters, vehicle counters and brand logos.
+- Redesigned the parking form. Now you're able to choose between keeping your vehicle personal or sharing it with the garage.
+- Redesigned the impound form.
 
-- Optimized thread for drawing markers.
+- Reworked Wall Effect to better adapt to vehicle dimensions, world geometry and uneven terrain.
+- Reworked garage transition animations and added support for displaying your server logo.
+- Reworked vehicle transfers with an interactive map and selectable garage locations by using Multicharacter Spawn Selector idea.
 
-- Added compatibility to impound npc vehicles.
--# Note - it does not actually impound vehicle but removes it from the game world (if NPC owned).
+- Created **Sell** that allows you to sell vehicle to other player through garage.
