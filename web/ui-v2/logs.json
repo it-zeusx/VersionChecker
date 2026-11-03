@@ -6,6 +6,185 @@
   },
   "releases": [
     {
+      "version": "3.6",
+      "date": "2026-11-03",
+      "title": "UIV2 Reimagined, Custom Map and Settings Overhaul",
+      "changes": [
+        {
+          "type": "improved",
+          "text": "Redesigned Welcome Screen."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned UI Settings."
+        },
+        {
+          "type": "improved",
+          "text": "Redesigned Pause Menu."
+        },
+        {
+          "type": "improved",
+          "text": "Reworked grid and grid snapping behavior in Position Mode."
+        },
+        {
+          "type": "improved",
+          "text": "Slightly redesigned the Position Mode interface."
+        },
+        {
+          "type": "improved",
+          "text": "Decreased ZSX Multicharacter loading time through UIV2 Welcome Screen preloading."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue with queue mode for notifications."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue that caused the cursor to fly away while using the map."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue with displaying the map while the on-foot visibility option was enabled."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed most issues related to Game Settings. Game Settings remain experimental."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue where the chat position was not saved in some cases."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed chat suggestion parameters not being visible when the theme color was white."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed selected chat input text not being visible when the theme color was white."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed the fuel indicator icon not being visible when the theme color was white."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed an issue where closed routes such as Pause Menu, UI Settings and Map could remain active on the front end."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed Position Mode not displaying every HUD status."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed notification in and out animations. They are now smooth again."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed inconsistent minimap zoom."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed HUD status in and out animations."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed a potential framework detection issue."
+        },
+        {
+          "type": "improved",
+          "text": "Changed networking logic for chat messages."
+        },
+        {
+          "type": "improved",
+          "text": "Changed data traffic handling for music DUI metadata requests."
+        },
+        {
+          "type": "improved",
+          "text": "Applied a per-client rate limit for chat messages."
+        },
+        {
+          "type": "improved",
+          "text": "Applied game-view transitions."
+        },
+        {
+          "type": "new",
+          "text": "Added a new minimap style. Players can now choose between the default minimap and the new style."
+        },
+        {
+          "type": "new",
+          "text": "Added configurable minimap zoom."
+        },
+        {
+          "type": "new",
+          "text": "Added a custom map to the P key."
+        },
+        {
+          "type": "new",
+          "text": "Added Config.UseNativeMapOnPKey to control whether the native map is used on the P key."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to place and drag the HUD below the minimap."
+        },
+        {
+          "type": "new",
+          "text": "Added automatic repositioning of default notifications and the street label when the HUD is placed below the minimap. The street label is repositioned when its on-foot visibility option is enabled."
+        },
+        {
+          "type": "new",
+          "text": "Added an option to determine when the HUD should be animated."
+        },
+        {
+          "type": "new",
+          "text": "Added a config option to switch between the custom map and native map in Pause Menu."
+        },
+        {
+          "type": "new",
+          "text": "Added a configurable function for gathering the maximum weapon ammo."
+        },
+        {
+          "type": "new",
+          "text": "Added an export for controlling the visibility of specific UI components, such as Displayers."
+        },
+        {
+          "type": "new",
+          "text": "Added a custom map view that replaces the native GTA map."
+        },
+        {
+          "type": "new",
+          "text": "Added an unlink feature for Chat, Displayers and HUD, allowing each interface to be moved separately."
+        },
+        {
+          "type": "new",
+          "text": "Added 78 new configuration settings."
+        },
+        {
+          "type": "new",
+          "text": "Added customization options for Chat, Displayers, Minimap, Street Label and Vehicle Indicators."
+        },
+        {
+          "type": "new",
+          "text": "Added a Presets component for easy navigation through saved presets."
+        },
+        {
+          "type": "new",
+          "text": "Added support for gathering server presets through UI Settings. The group or player requires the zsx.uiv2.preset_export ACE permission."
+        },
+        {
+          "type": "new",
+          "text": "Added free positioning in Position Mode through the ALT key."
+        },
+        {
+          "type": "new",
+          "text": "Added separate camera perspective settings for Pause Menu, UI Settings and Position Mode."
+        },
+        {
+          "type": "improved",
+          "text": "Updated the game-view renderer for Canary Beta FiveM clients."
+        }
+      ]
+    },
+    {
       "version": "3.2a",
       "date": "2026-08-14",
       "title": "UI Overhaul - Hotfix #1",
