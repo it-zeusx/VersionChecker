@@ -6,6 +6,21 @@
   },
   "releases": [
     {
+      "version": "3.6a",
+      "date": "2026-11-06",
+      "title": "Reimagined Hotfix #1",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fixed issue with minimap zoom while custom minimap texture."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with mouse going out of bounds while entering/leaving map component."
+        }
+      ]
+    },
+    {
       "version": "3.6",
       "date": "2026-11-03",
       "title": "UIV2 Reimagined, Custom Map and Settings Overhaul",

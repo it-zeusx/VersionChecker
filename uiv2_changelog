@@ -1,41 +1,11 @@
-[3.2]
-- Fixed issues with NUI callbacks not returning any callback data.
-- Fixed issue with Default Car Hud type containg wrong position offsets.
-- Fixed issue with 3D Waypoints not being accessible while on foot.
-- Fixed issue with seatbelt indicator sounds being played twice in some cases.
-- Fixed issue with Square Hud type displaying zero values as full.
+[3.6a]
+- Fixed issue with minimap zoom while custom minimap texture.
+- Fixed issue with mouse going out of bounds while entering/leaving map component.
 
-- Optimized both of seatbelts and car hud threads, which results in really low usage while inside vehicle.
-- Optimized Points feature.
-- Optimized Player DUI.
-- Optimized 3D Perspective handle.
+FILES TO CHANGE AFTER THE UPDATE
+- client/functions/components
+- client/functions/handlers
 
-- Slightly redesigned Car Hud metric units and progresses so they're more visible at night.
-- Small adjustments to the size of the 3D Perspective.
-- **Seatbelt** & **Engine health** icons have been moved to the ||vehicle indicator|| component.
-- Redesigned **Postion** and **Preview** mode. Now you're able to configure interface position way better.
-- Reworked Player DUI completely. 
+- shared/config.lua
 
-- Applied SetEntityInvincible native instead SetPlayerInvincible due to customer request.
-- Applied asynchronous loading for routes.
-- Applied different logic for timers for both Notifications and Default Notifications.
-- Applied listeners for vehicle types. When vehicle is electric it will display bolt icon instead of gas pump.
-- Applied different TextUI logic to handle key controls. Now it listens for any input, removes it from the Text and parses it to the key param.
-- Applied different handle for 3D Perspective content.
-
-- Added **vehicle mileage** support.
-- Added TextUI snippet for ox_lib.
-- Added **Vertical Alignment** option for hud.
-- Added **Low Status Warnings** that displays low indication values and sends default notification with a message.
-- Added day & night cycle for vehicle components to easily navigate through visible data.
-
-- Created **Widescreen** compatibility.
-- Created **Context Menu** that utilizes all ox_lib features.
-- Created **Vehicle Indicators** that displays blinkers, emergency lights, engine & seatbelt status & more.
-- Created **Plane Hud** for better immersion.
-- Created **Background Blur** feature that allows you to make a **glass effect** on available components.
-
-[3.2a]
-- Fixed issue with TextUI `onComplete` events not being called due to the funcref.
-- Added background blur preset option to be enabled by default.
-- Added storage verification to prevent issues with wrong storage data.
+- fxmanifest.lua
