@@ -6,6 +6,45 @@
   },
   "releases": [
     {
+      "version": "4.1A",
+      "date": "2026-11-06",
+      "title": "Hotfix #2",
+      "changes": [
+        {
+          "type": "breaking",
+          "text": "Changed logic when loading screen shuts down. In most cases that was the case for the long loadings, since either way the script environment was not yet ready."
+        },
+        {
+          "type": "improved",
+          "text": "Added more variables that determines duration for the preloader."
+        },
+        {
+          "type": "improved",
+          "text": "Applied extended number range for timeouts."
+        },
+        {
+          "type": "improved",
+          "text": "Added retry timeouts in case preload fails."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with preload durations."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with sceneTimeout duration."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with the validation of the identity."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with character placement in Multicharacter view."
+        }
+      ]
+    },
+    {
       "version": "4.0",
       "date": "2026-09-11",
       "title": "Complete Rework",
@@ -66,7 +105,6 @@
           "type": "improved",
           "text": "Optimized character swap."
         },
-
         {
           "type": "improved",
           "text": "Added per-character settings preferences such as camera position / animation, filters and pose."
