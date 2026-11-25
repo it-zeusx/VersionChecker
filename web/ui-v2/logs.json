@@ -6,6 +6,37 @@
   },
   "releases": [
     {
+      "version": "3.6b",
+      "date": "2026-11-25",
+      "title": "Reimagined Hotfix #2",
+      "changes": [
+        {
+          "type": "fixed",
+          "text": "Fixed issue with mouse cursor being active when outside of the map component causing cursor to appear on the 2nd monitor."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed cosmetical issue with queue tabs in notifications when smooth edges option is enabled."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with distance scaling option not being properly saved."
+        },
+        {
+          "type": "fixed",
+          "text": "Fixed issue with map legend on moveable blips."
+        },
+        {
+          "type": "improved",
+          "text": "Changed timings of welcome screen payload."
+        },
+        {
+          "type": "improved",
+          "text": "Added more options to configure for Config.UI.PlayerSettings table to determine which options player can change and which not."
+        }
+      ]
+    },
+    {
       "version": "3.6a",
       "date": "2026-11-06",
       "title": "Reimagined Hotfix #1",
